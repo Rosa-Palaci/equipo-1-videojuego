@@ -1,4 +1,4 @@
-# FracChef
+# Epic Supernova Adventure
 
 ¡Bienvenido a nuestro repositorio de proyecto! Aquí encontrarás todo lo relacionado con nuestro proyecto para la materia de Construcción de Software y Toma de Decisiones. En este desafío, estamos trabajando en el desarrollo de un videojuego diseñado específicamente para estudiantes de secundaria. El objetivo principal de este juego es ayudar a los estudiantes a familiarizarse de manera divertida y efectiva con el concepto de fracciones.
 
