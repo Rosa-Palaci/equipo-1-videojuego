@@ -373,6 +373,7 @@
 "Assets/scripts/score.cs"
 "Assets/scripts/textos.cs"
 "Assets/scripts/textos1.cs"
+"Assets/StarfieldMaterials/Scripts/Move.cs"
 "Assets/StarSparrow/Readme/Readme Files/Scripts/ReadmeStarSparrow.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
