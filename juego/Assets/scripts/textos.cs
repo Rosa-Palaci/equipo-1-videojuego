@@ -24,7 +24,7 @@ public class textos : MonoBehaviour
         if(nombreDeEscenaActual == "principal")
         {
             pregunta.text = "Cual es el planeta mas grande?"; // p1q
-            op1.text = "principal"; //corecta
+            op1.text = "a"; //corecta
             op2.text = "principal";
             op3.text = "principal"; 
             
