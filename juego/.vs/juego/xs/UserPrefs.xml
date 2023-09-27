@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{4167DE37-7623-7245-7179-B1129516F4B7}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9468e78d-3eb2-4203-9476-dc464b5493b8" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/player.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="92f6bcb0-63a6-41f7-ae5a-6ac71e281b4e" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/bala.cs">
     <Files>
       <File FileName="Assets/scripts/player.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/disparoJugador.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/textos.cs" Line="29" Column="36" />
+      <File FileName="Assets/scripts/score.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/bala.cs" Line="35" Column="54" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="juego">
             <Node name="Assets" expanded="True">
-              <Node name="scripts" expanded="True" />
+              <Node name="scripts" expanded="True">
+                <Node name="bala.cs" selected="True" />
+              </Node>
               <Node name="StarfieldMaterials" expanded="True" />
             </Node>
           </Node>
@@ -23,4 +23,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
 </Properties>
