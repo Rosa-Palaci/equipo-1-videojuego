@@ -370,6 +370,7 @@
 "Assets/scripts/bala.cs"
 "Assets/scripts/disparoJugador.cs"
 "Assets/scripts/player.cs"
+"Assets/scripts/rotacionMeteorito.cs"
 "Assets/scripts/rotacionpreguntas.cs"
 "Assets/scripts/score.cs"
 "Assets/scripts/textos.cs"
