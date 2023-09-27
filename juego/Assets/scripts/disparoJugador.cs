@@ -28,7 +28,7 @@ public class disparoJugador : MonoBehaviour
         GameObject balaInstanciada = Instantiate(bala, controladorDisparo.position, controladorDisparo.rotation);
 
         // Destruye la bala después de un cierto tiempo 
-        float tiempoDeVida = 0.5f; // Cambia esto al tiempo que desees
+        float tiempoDeVida = 0.4f; // Cambia esto al tiempo que desees
         Destroy(balaInstanciada, tiempoDeVida);
     }
 }
