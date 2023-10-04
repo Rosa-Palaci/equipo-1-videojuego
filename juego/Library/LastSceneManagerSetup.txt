@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/dos.unity
+- path: Assets/principal.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
