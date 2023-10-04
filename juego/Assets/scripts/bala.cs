@@ -9,7 +9,9 @@ public class bala : MonoBehaviour
     public textos1 t1;
     public score Score;
     [SerializeField] private float velocidad; //velocidad de la bala
-    private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
+    public float retrasoEntreEscenas = 1000f; // retraso entre cada escena
+    public bool completado = false;
+    private SpriteRenderer spriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +21,8 @@ public class bala : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
         transform.Translate(Vector2.up * velocidad * Time.deltaTime);
 
 
@@ -29,11 +33,14 @@ public class bala : MonoBehaviour
 
         if (obj.tag == "correcta")
         {
+            CambiarEscenaConRetraso();
             Debug.Log("ganaste");
+            
             //obj.GetComponent<textos>().opcion1.text = "a";
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
             StartCoroutine(CambiarEscenaConRetraso());
+
 
 
 
@@ -42,12 +49,15 @@ public class bala : MonoBehaviour
 
         if (obj.tag == "incorrecta")
         {
+            CambiarEscenaConRetraso();
             Debug.Log("perdiste");
+            retrasoEntreEscenas = 10f;
             //obj.GetComponent<textos>().opcion1.text = "a";
-            
+
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
             StartCoroutine(CambiarEscenaConRetraso());
+
 
 
 
@@ -83,4 +93,11 @@ public class bala : MonoBehaviour
         // Carga la siguiente escena
         SceneManager.LoadScene(indiceDeSiguienteEscena);
     }
+
+    private void DesactivarBala()
+    {
+        // Desactivar el renderizador de la bala para hacerla invisible
+        spriteRenderer.enabled = false;
+    }
+
 }
