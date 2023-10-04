@@ -3,54 +3,71 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class bala : MonoBehaviour
+public class Bala : MonoBehaviour
 {
-    public textos1 t1;
+    public textos text;
     public score Score;
+
     [SerializeField] private float velocidad; //velocidad de la bala
-    private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
+    [SerializeField] private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
+
     // Start is called before the first frame update
     void Start()
     {
 
     }
 
+    private void Awake()
+    {
+        // Busca el objeto con el script textos y el objeto con el script score en tiempo de ejecución.
+        text = FindObjectOfType<textos>();
+        Score = FindObjectOfType<score>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         transform.Translate(Vector2.up * velocidad * Time.deltaTime);
-
-
     }
 
     void OnTriggerEnter2D(Collider2D obj)
     {
-
         if (obj.tag == "correcta")
         {
             Debug.Log("ganaste");
-            //obj.GetComponent<textos>().opcion1.text = "a";
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
-            StartCoroutine(CambiarEscenaConRetraso());
 
+            int topicActual = text.topic;
+            Debug.Log("topic " + topicActual);
 
-
-
+            // Suma 1 punto en la asignatura correspondiente según el "topic"
+            switch (topicActual)
+            {
+                case 0: // Química
+                    Debug.Log("sumo quimica");
+                    Score.puntosQuimica++;
+                    break;
+                case 1: // Física
+                    Debug.Log("sumo fisica");
+                    Score.puntosFisica++;
+                    break;
+                case 2: // Matemáticas
+                    Debug.Log("sumo matematicas");
+                    Score.puntosMatematicas++;
+                    break;
+                case 3: // Biología
+                    Debug.Log("sumo biologia");
+                    Score.puntosBiologia++;
+                    break;
+            }
         }
 
         if (obj.tag == "incorrecta")
         {
             Debug.Log("perdiste");
-            //obj.GetComponent<textos>().opcion1.text = "a";
-            
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
-            StartCoroutine(CambiarEscenaConRetraso());
-
-
-
         }
     }
 
@@ -64,23 +81,5 @@ public class bala : MonoBehaviour
         {
             Destroy(objeto);
         }
-
-
-
-    }
-
-    private IEnumerator CambiarEscenaConRetraso()
-    {
-        // Espera el retraso antes de cambiar de escena
-        yield return new WaitForSeconds(retrasoEntreEscenas);
-
-        // Obtén el índice de la escena actual
-        int indiceDeEscenaActual = SceneManager.GetActiveScene().buildIndex;
-
-        // Calcula el índice de la siguiente escena
-        int indiceDeSiguienteEscena = (indiceDeEscenaActual + 1) % SceneManager.sceneCountInBuildSettings;
-
-        // Carga la siguiente escena
-        SceneManager.LoadScene(indiceDeSiguienteEscena);
     }
 }

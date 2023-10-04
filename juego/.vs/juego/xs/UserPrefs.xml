@@ -1,21 +1,20 @@
 ﻿<Properties StartupConfiguration="{4167DE37-7623-7245-7179-B1129516F4B7}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="92f6bcb0-63a6-41f7-ae5a-6ac71e281b4e" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/bala.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/disparoJugador.cs">
     <Files>
-      <File FileName="Assets/scripts/player.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/disparoJugador.cs" Line="1" Column="1" />
-      <File FileName="Assets/scripts/textos.cs" Line="29" Column="36" />
-      <File FileName="Assets/scripts/score.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/player.cs" />
+      <File FileName="Assets/scripts/disparoJugador.cs" Line="31" Column="33" />
+      <File FileName="Assets/scripts/textos.cs" />
+      <File FileName="Assets/scripts/score.cs" />
       <File FileName="Assets/scripts/bala.cs" Line="35" Column="54" />
+      <File FileName="Assets/scripts/rotacion-preguntas.cs" Line="7" Column="4" />
+      <File FileName="Assets/scripts/rotacionMeteorito.cs" Line="7" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="juego">
+          <Node name="juego" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="scripts" expanded="True">
-                <Node name="bala.cs" selected="True" />
-              </Node>
+              <Node name="scripts" expanded="True" />
               <Node name="StarfieldMaterials" expanded="True" />
             </Node>
           </Node>
@@ -23,10 +22,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bd017e98-2e14-462e-b5ef-1eaff0a54550" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
 </Properties>
