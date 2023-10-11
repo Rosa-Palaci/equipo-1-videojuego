@@ -10,6 +10,9 @@ public class Bala : MonoBehaviour
     public GameObject explosion;
     [SerializeField] private float velocidad; //velocidad de la bala
     [SerializeField] private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
+    public GameObject sonidoMeteoritoExplosionPrefab;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,9 +37,15 @@ public class Bala : MonoBehaviour
     {
         if (obj.tag == "correcta")
         {
+            Instantiate(explosion, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), transform.rotation);
+            GameObject explosionMeteorito = Instantiate(sonidoMeteoritoExplosionPrefab);
+            AudioSource audioSource = explosionMeteorito.GetComponent<AudioSource>();
+            audioSource.Play();
             Debug.Log("ganaste");
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
+            // Destruir el objeto después de reproducir el sonido 
+            Destroy(explosionMeteorito, audioSource.clip.length);
 
             int topicActual = text.topic;
             Debug.Log("topic " + topicActual);
@@ -66,9 +75,15 @@ public class Bala : MonoBehaviour
         if (obj.tag == "incorrecta")
         {
             Instantiate(explosion,new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z),transform.rotation);
+            GameObject explosionMeteorito = Instantiate(sonidoMeteoritoExplosionPrefab);
+            AudioSource audioSource = explosionMeteorito.GetComponent<AudioSource>();
+            audioSource.Play();
             Debug.Log("perdiste");
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
+            // Destruir el objeto después de reproducir el sonido 
+            Destroy(explosionMeteorito, audioSource.clip.length);
+            
         }
     }
 

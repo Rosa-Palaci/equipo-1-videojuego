@@ -22,28 +22,35 @@ public class ControladorNiveles : MonoBehaviour
         }
     }
 
-    void CambiarEscena()
-    {
-        // Coloca aquí el código para cambiar de escena
-        // Por ejemplo, puedes cargar la siguiente escena de la siguiente manera:
-        int indiceDeSiguienteEscena = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
-        SceneManager.LoadScene(indiceDeSiguienteEscena);
-    }
+
+
+
+
+
 
     private IEnumerator CambiarEscenaConRetraso()
     {
 
         // Espera el retraso antes de cambiar de escena
         yield return new WaitForSeconds(retrasoEntreEscenas);
-        Debug.Log("Cambiando de escena...");
-        // Obtén el índice de la escena actual
-        int indiceDeEscenaActual = SceneManager.GetActiveScene().buildIndex;
+        // Obtiene el nombre de la escena actual
+        string nombreDeEscenaActual = SceneManager.GetActiveScene().name;
 
-        // Calcula el índice de la siguiente escena
-        int indiceDeSiguienteEscena = (indiceDeEscenaActual + 1) % SceneManager.sceneCountInBuildSettings;
+        // Lista de nombres de escenas que deben llevar a la escena 0
+        List<string> escenasEspeciales = new List<string> { "M10", "q10", "f10", "b10" };
 
-        // Carga la siguiente escena
-        SceneManager.LoadScene(indiceDeSiguienteEscena);
+        // Verifica si el nombre de la escena actual está en la lista de escenas especiales
+        if (escenasEspeciales.Contains(nombreDeEscenaActual))
+        {
+            // Carga la escena 0
+            SceneManager.LoadScene(1);
+        }
+        else
+        {
+            // Si no es una escena especial, carga la siguiente escena como lo hacías antes
+            int indiceDeSiguienteEscena = (SceneManager.GetActiveScene().buildIndex + 1) % SceneManager.sceneCountInBuildSettings;
+            SceneManager.LoadScene(indiceDeSiguienteEscena);
+        }
+
     }
-
 }

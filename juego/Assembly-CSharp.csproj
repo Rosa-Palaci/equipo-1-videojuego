@@ -64,7 +64,6 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/scripts/ControladorNiveles.cs" />
-    <Compile Include="Assets/scripts/textos1.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
     <Compile Include="Assets/scripts/disparoJugador.cs" />
     <Compile Include="Assets/scripts/player.cs" />

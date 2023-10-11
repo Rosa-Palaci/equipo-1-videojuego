@@ -121,6 +121,7 @@ MonoBehaviour:
   explosion: {fileID: 9000535007689435057, guid: 0e0c81b05b17d45c7bc36adb62a156b1, type: 3}
   velocidad: 10
   retrasoEntreEscenas: 3
+  sonidoMeteoritoExplosionPrefab: {fileID: 1443605597564457088, guid: 49a03c8fa6cb847b99fa2649ca4a7f96, type: 3}
 --- !u!50 &-3071916959956304058
 Rigidbody2D:
   serializedVersion: 4

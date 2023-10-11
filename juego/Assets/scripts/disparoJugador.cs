@@ -6,6 +6,7 @@ public class disparoJugador : MonoBehaviour
 {
     [SerializeField] private Transform controladorDisparo;
     [SerializeField] private GameObject bala;
+    public GameObject sonidoDisparoPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,17 @@ public class disparoJugador : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
+            
+            GameObject sonidoDisparo = Instantiate(sonidoDisparoPrefab);
+
+            
+            AudioSource audioSource = sonidoDisparo.GetComponent<AudioSource>();
+
+            
+            audioSource.Play();
+
+            // Destruir el objeto después de reproducir el sonido 
+            Destroy(sonidoDisparo, audioSource.clip.length);
             //disparar
             Disparar();
         }

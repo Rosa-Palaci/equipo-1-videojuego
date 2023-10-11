@@ -35,7 +35,7 @@ public class textos : MonoBehaviour
             
             
         }
-        if (nombreDeEscenaActual == "uno")
+        if (nombreDeEscenaActual == "m10")
         {
             pregunta.text = "Cual es el planeta mas grande?"; // p2q
             op1.text = "correcta"; 
