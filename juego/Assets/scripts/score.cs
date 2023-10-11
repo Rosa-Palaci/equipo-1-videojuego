@@ -11,6 +11,7 @@ public class score : MonoBehaviour
     public int puntosMatematicas = 0;
     public int puntosBiologia = 0;
     public int puntosQuimica = 0;
+    public int total;
 
 
     private static score _instance;
@@ -36,7 +37,7 @@ public class score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        total = puntosFisica + puntosMatematicas + puntosBiologia + puntosQuimica;
     }
 
     
