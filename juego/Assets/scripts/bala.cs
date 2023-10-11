@@ -7,7 +7,7 @@ public class Bala : MonoBehaviour
 {
     public textos text;
     public score Score;
-
+    public GameObject explosion;
     [SerializeField] private float velocidad; //velocidad de la bala
     [SerializeField] private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
 
@@ -65,6 +65,7 @@ public class Bala : MonoBehaviour
 
         if (obj.tag == "incorrecta")
         {
+            Instantiate(explosion,new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z),transform.rotation);
             Debug.Log("perdiste");
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");

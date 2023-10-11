@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 4983785422590093243, guid: fc905182e74b14967a10f14786ad3d01, type: 3}
   Score: {fileID: 5927986735984576501, guid: c92fbf14fd6534dc8baba216c69d65fd, type: 3}
+  explosion: {fileID: 9000535007689435057, guid: 0e0c81b05b17d45c7bc36adb62a156b1, type: 3}
   velocidad: 10
   retrasoEntreEscenas: 3
 --- !u!50 &-3071916959956304058
