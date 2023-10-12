@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class player : MonoBehaviour
 {
     public score Score;
@@ -13,11 +14,24 @@ public class player : MonoBehaviour
     public float moveSpeed = 25;
     private Vector2 direction;
     // Start is called before the first frame update
+
+    private GameObject resultadoTexto;
    
 
     void Awake() {
+        
+
+    }
+
+
+
+   
+
+    // Update is called once per frame
+    void Update()
+    {
         Score = FindObjectOfType<score>();
-        if (Score.total < 1)
+        if (Score.total < 2)
         {
             jugador1.SetActive(true); // si total < 10 jugador 1
             jugador2.SetActive(false);
@@ -27,19 +41,6 @@ public class player : MonoBehaviour
             jugador2.SetActive(true); // si total > 10 jugador 2
             jugador1.SetActive(false);
         }
-
-    }
-
-
-
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
 
         inputValue = Input.GetAxisRaw("Horizontal");
 

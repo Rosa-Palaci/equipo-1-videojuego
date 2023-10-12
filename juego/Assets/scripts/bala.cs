@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class Bala : MonoBehaviour
 {
@@ -9,14 +11,19 @@ public class Bala : MonoBehaviour
     public score Score;
     public GameObject explosion;
     [SerializeField] private float velocidad; //velocidad de la bala
-    [SerializeField] private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
+    
     public GameObject sonidoMeteoritoExplosionPrefab;
+
+    public GameObject resultadoPrefab;
+    private GameObject resultadoTexto;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+    
+
 
     }
 
@@ -30,13 +37,17 @@ public class Bala : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.up * velocidad * Time.deltaTime);
+        UnityEngine.Vector2 up = UnityEngine.Vector2.up;
+        transform.Translate(up * velocidad * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D obj)
     {
         if (obj.tag == "correcta")
         {
+            
+
+
             Instantiate(explosion, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), transform.rotation);
             GameObject explosionMeteorito = Instantiate(sonidoMeteoritoExplosionPrefab);
             AudioSource audioSource = explosionMeteorito.GetComponent<AudioSource>();
@@ -44,6 +55,14 @@ public class Bala : MonoBehaviour
             Debug.Log("ganaste");
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
+
+            // Texto del resultado
+            Vector3 posicion = new Vector3(7.5f, -0.7f, -0.05469418f);
+
+            resultadoTexto = Instantiate(resultadoPrefab, posicion, Quaternion.identity);
+            resultadoTexto.GetComponent<TMP_Text>().text = "Correcto";
+            resultadoTexto.GetComponent<TMP_Text>().color = Color.green;
+
             // Destruir el objeto después de reproducir el sonido 
             Destroy(explosionMeteorito, audioSource.clip.length);
 
@@ -74,6 +93,8 @@ public class Bala : MonoBehaviour
 
         if (obj.tag == "incorrecta")
         {
+           
+
             Instantiate(explosion,new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z),transform.rotation);
             GameObject explosionMeteorito = Instantiate(sonidoMeteoritoExplosionPrefab);
             AudioSource audioSource = explosionMeteorito.GetComponent<AudioSource>();
@@ -81,6 +102,14 @@ public class Bala : MonoBehaviour
             Debug.Log("perdiste");
             DestruirObjetosPorEtiqueta("correcta");
             DestruirObjetosPorEtiqueta("incorrecta");
+
+            // Texto del resultado
+            Vector3 posicion = new Vector3(7.5f, -0.7f, -0.05469418f);
+
+            resultadoTexto = Instantiate(resultadoPrefab, posicion, Quaternion.identity);
+            resultadoTexto.GetComponent<TMP_Text>().text = "Incorrecto";
+            resultadoTexto.GetComponent<TMP_Text>().color = Color.red;
+
             // Destruir el objeto después de reproducir el sonido 
             Destroy(explosionMeteorito, audioSource.clip.length);
             
