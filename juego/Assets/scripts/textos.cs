@@ -33,16 +33,98 @@ public class textos : MonoBehaviour
             op3.text = "respeusta 3";
             topic = 0;
             
-            
+            // PREGUNTAS DE MATEMATICAS
         }
-        if (nombreDeEscenaActual == "uno")
+        if (nombreDeEscenaActual == "M1")
         {
-            pregunta.text = "Cual es el planeta mas grande?"; // p2q
+            pregunta.text = "M1"; // p2q
             op1.text = "correcta"; 
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 2;
+        }
+        if (nombreDeEscenaActual == "M2")
+        {
+            pregunta.text = "M2"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 2;
+        }
+        if (nombreDeEscenaActual == "M3")
+        {
+            pregunta.text = "M3"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 2;
+        }
+        if (nombreDeEscenaActual == "M4")
+        {
+            pregunta.text = "M4"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 2;
+        }
+        if (nombreDeEscenaActual == "M5")
+        {
+            pregunta.text = "M5"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 2;
+        }
+
+        //PREGUNTAS DE FISICA
+
+        if (nombreDeEscenaActual == "F1")
+        {
+            pregunta.text = "F1"; // p2q
+            op1.text = "correcta";
             op2.text = "uno"; //corecta
             op3.text = "uno";
             topic = 1;
         }
+        if (nombreDeEscenaActual == "F2")
+        {
+            pregunta.text = "F2"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "F3")
+        {
+            pregunta.text = "F3"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "F4")
+        {
+            pregunta.text = "F4"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "F5")
+        {
+            pregunta.text = "F5"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+
+
+
+
+
+
+
         if (nombreDeEscenaActual == "dos")
         {
             pregunta.text = "Cual es el planeta mas grande?"; // p3q

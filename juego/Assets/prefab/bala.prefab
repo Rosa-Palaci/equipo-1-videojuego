@@ -120,7 +120,9 @@ MonoBehaviour:
   Score: {fileID: 5927986735984576501, guid: c92fbf14fd6534dc8baba216c69d65fd, type: 3}
   explosion: {fileID: 9000535007689435057, guid: 0e0c81b05b17d45c7bc36adb62a156b1, type: 3}
   velocidad: 10
-  retrasoEntreEscenas: 3
+  sonidoMeteoritoExplosionPrefab: {fileID: 1443605597564457088, guid: 49a03c8fa6cb847b99fa2649ca4a7f96, type: 3}
+  resultadoPrefab: {fileID: 9105254035998842006, guid: d78df224c6e60460597631f3e22e089c, type: 3}
+  resultadoTexto: {fileID: 0}
 --- !u!50 &-3071916959956304058
 Rigidbody2D:
   serializedVersion: 4
