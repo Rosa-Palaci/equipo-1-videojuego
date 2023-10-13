@@ -59,7 +59,9 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Scripts/CFX_LightIntensityFade.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
+    <Compile Include="Assets/scripts/Bala.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo.cs" />
+    <Compile Include="Assets/scripts/score.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Spawn System/CFX_SpawnSystem.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
@@ -68,6 +70,7 @@
     <Compile Include="Assets/scripts/ControladorNiveles.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
     <Compile Include="Assets/scripts/disparoJugador.cs" />
+    <Compile Include="Assets/scripts/player.cs" />
     <Compile Include="Assets/scripts/Inicio.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Scripts/WFX_BulletHoleDecal.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
@@ -105,6 +108,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Demo/Assets/CFX_Demo_Translate.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
+    <Compile Include="Assets/scripts/textos.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
@@ -112,10 +116,9 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_New.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
-    <Compile Include="Assets/scripts/score.cs" />
-    <Compile Include="Assets/scripts/textos.cs" />
-    <Compile Include="Assets/scripts/player.cs" />
-    <Compile Include="Assets/scripts/Bala.cs" />
+    <Compile Include="Assets/scripts/Equipo.cs" />
+    <Compile Include="Assets/HeneGames/Simple Scene Loader/Scripts/LoadingScreen.cs" />
+    <Compile Include="Assets/scripts/Carga.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

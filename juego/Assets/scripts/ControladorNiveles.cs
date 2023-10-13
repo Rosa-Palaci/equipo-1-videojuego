@@ -6,6 +6,7 @@ using System.Collections.Generic;
 
 public class ControladorNiveles : MonoBehaviour
 {
+  
     public GameObject[] objetosParaDetectar; // Lista de objetos a detectar
     [SerializeField] private float retrasoEntreEscenas = 3.0f; // retraso entre cada escena
 
@@ -37,7 +38,7 @@ public class ControladorNiveles : MonoBehaviour
         string nombreDeEscenaActual = SceneManager.GetActiveScene().name;
 
         // Lista de nombres de escenas que deben llevar a la escena 0
-        List<string> escenasEspeciales = new List<string> { "M10", "q10", "f10", "b10" };
+        List<string> escenasEspeciales = new List<string> { "M5", "Q5", "F5", "B5" };
 
         // Verifica si el nombre de la escena actual está en la lista de escenas especiales
         if (escenasEspeciales.Contains(nombreDeEscenaActual))

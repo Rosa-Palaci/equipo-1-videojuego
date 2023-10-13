@@ -1,32 +1,34 @@
-﻿<Properties StartupConfiguration="{4167DE37-7623-7245-7179-B1129516F4B7}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57ccb7fd-0b00-40e3-8369-db96fdc4f37e" />
-  <MultiItemStartupConfigurations />
+﻿<Properties>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/textos.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/scripts/Carga.cs">
     <Files>
-      <File FileName="Assets/scripts/player.cs" Line="12" Column="5" />
-      <File FileName="Assets/scripts/textos.cs" Line="35" Column="13" />
-      <File FileName="Assets/scripts/bala.cs" Line="47" Column="13" />
-      <File FileName="Assets/scripts/score.cs" Line="29" Column="6" />
-      <File FileName="Assets/scripts/disparoJugador.cs" Line="31" Column="33" />
-      <File FileName="Assets/scripts/Controlador-niveles.cs" Line="37" Column="60" />
-      <File FileName="Assets/scripts/rotacionMeteorito.cs" Line="7" Column="36" />
+      <File FileName="Assets/scripts/player.cs" Line="22" Column="9" />
+      <File FileName="Assets/scripts/Bala.cs" Line="60" Column="47" />
+      <File FileName="Assets/scripts/textos.cs" Line="76" Column="22" />
+      <File FileName="Assets/scripts/score.cs" Line="40" Column="83" />
+      <File FileName="Assets/scripts/disparoJugador.cs" />
+      <File FileName="Assets/scripts/rotacionMeteorito.cs" />
+      <File FileName="Assets/scripts/seleccionanivel.cs" Line="46" Column="1" />
+      <File FileName="Assets/scripts/ControladorNiveles.cs" Line="41" Column="82" />
+      <File FileName="Assets/scripts/Equipo.cs" Line="17" Column="34" />
+      <File FileName="Assets/HeneGames/Simple Scene Loader/Scripts/LoadingScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/Carga.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="juego">
-            <Node name="Assets" expanded="True">
-              <Node name="scripts" expanded="True" />
-              <Node name="StarfieldMaterials" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="juego" expanded="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Assembly-CSharp-Editor.csproj</String>
+    <String>Assembly-CSharp.csproj</String>
+  </DisabledProjects>
 </Properties>

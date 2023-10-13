@@ -679,7 +679,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 581724798}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 742806238}
+        m_TargetAssemblyTypeName: seleccionanivel, Assembly-CSharp
+        m_MethodName: SeleccionaNivel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: F1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 742806238}
+        m_TargetAssemblyTypeName: seleccionanivel, Assembly-CSharp
+        m_MethodName: DesactivarBoton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 581724797}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &581724798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -730,8 +754,9 @@ GameObject:
   - component: {fileID: 715484224}
   - component: {fileID: 715484223}
   - component: {fileID: 715484222}
+  - component: {fileID: 715484225}
   m_Layer: 5
-  m_Name: Button Matematicas
+  m_Name: ButtonMatematicas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -811,7 +836,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: principal
+          m_StringArgument: M1
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 742806238}
+        m_TargetAssemblyTypeName: seleccionanivel, Assembly-CSharp
+        m_MethodName: DesactivarBoton
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 715484222}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &715484223
@@ -852,6 +889,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715484220}
   m_CullTransparentMesh: 1
+--- !u!61 &715484225
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715484220}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &742806233
 GameObject:
   m_ObjectHideFlags: 0
