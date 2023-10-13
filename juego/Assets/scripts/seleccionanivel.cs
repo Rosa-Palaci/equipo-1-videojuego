@@ -6,40 +6,24 @@ using UnityEngine.UI;
 
 public class seleccionanivel : MonoBehaviour
 {
-    bool botonesDesactivados = false;
+    public Button boton; // Asigna el botón en el Inspector
 
     void Awake()
     {
-        if (botonesDesactivados)
+        if (!boton.interactable)
         {
-            DesactivarBotonesGuardados();
+            DesactivarBoton();
         }
     }
 
     public void SeleccionaNivel(string nombre)
     {
         SceneManager.LoadScene(nombre);
-        botonesDesactivados = true;
+        DesactivarBoton();
     }
 
-    public void DesactivarBoton(Button button)
+    public void DesactivarBoton()
     {
-        button.interactable = false;
-        string botonKey = button.name + "Desactivado";
-        PlayerPrefs.SetInt(botonKey, 1);
-    }
-
-    public void DesactivarBotonesGuardados()
-    {
-        Button[] buttons = FindObjectsOfType<Button>();
-        foreach (Button button in buttons)
-        {
-            string botonKey = button.name + "Desactivado";
-            int botonDesactivado = PlayerPrefs.GetInt(botonKey, 0);
-            if (botonDesactivado == 1)
-            {
-                DesactivarBoton(button);
-            }
-        }
+        boton.interactable = false;
     }
 }

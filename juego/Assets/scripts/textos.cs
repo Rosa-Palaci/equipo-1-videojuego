@@ -119,6 +119,95 @@ public class textos : MonoBehaviour
             topic = 1;
         }
 
+        // PREGUNTAS DE BIOLOGIA
+
+        if (nombreDeEscenaActual == "B1")
+        {
+            pregunta.text = "B1"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "B2")
+        {
+            pregunta.text = "B2"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "B3")
+        {
+            pregunta.text = "B3"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "B4")
+        {
+            pregunta.text = "B4"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "B5")
+        {
+            pregunta.text = "B5"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+
+
+        // PREGUNTAS DE QUIMICA
+
+        if (nombreDeEscenaActual == "Q1")
+        {
+            pregunta.text = "Q1"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "Q2")
+        {
+            pregunta.text = "Q2"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "Q3")
+        {
+            pregunta.text = "Q3"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "Q4")
+        {
+            pregunta.text = "Q4"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+        if (nombreDeEscenaActual == "Q5")
+        {
+            pregunta.text = "Q5"; // p2q
+            op1.text = "correcta";
+            op2.text = "uno"; //corecta
+            op3.text = "uno";
+            topic = 1;
+        }
+
+
+
 
 
 
