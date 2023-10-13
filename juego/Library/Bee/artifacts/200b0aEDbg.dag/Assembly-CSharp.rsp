@@ -387,6 +387,7 @@
 "Assets/scripts/ControladorNiveles.cs"
 "Assets/scripts/disparoJugador.cs"
 "Assets/scripts/Equipo.cs"
+"Assets/scripts/IniciarCarga.cs"
 "Assets/scripts/Inicio.cs"
 "Assets/scripts/player.cs"
 "Assets/scripts/rotacionMeteorito.cs"
